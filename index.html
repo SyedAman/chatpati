@@ -1,21 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn"> <!-- Set language to Bangla -->
 <head>
     <meta charset="UTF-8">
     <title>Chatpati Cooking Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-container">
-        <img id="pot" src="pot_empty.png" alt="Cooking Pot">
-        <div id="ingredients">
-            <img src="chickpeas.png" alt="Chickpeas" onclick="addIngredient('chickpeas')">
-            <img src="chatpati_masala.png" alt="Chatpati Masala" onclick="addIngredient('masala')">
-            <!-- Add more images for each ingredient -->
+    <div id="game-layout">
+        <div id="finished-chatpati">
+            <!-- Add more elements representing the finished dish -->
         </div>
-        <div id="timer">Time Left: <span id="time">60</span> seconds</div>
-        <button id="start-game" onclick="startGame()">Start Cooking!</button>
+
+        <div id="game-container">
+            <h1>চাটপাটি</h1> <!-- Chatpati in Bangla -->
+            <img id="pot" src="pot_empty.png" alt="Cooking Pot">
+
+            <div id="ingredients">
+                <div class="ingredient">
+                    <img src="chickpeas.png" alt="Chickpeas" onclick="addIngredient('chickpeas')">
+                    <span>ছোলা যোগ করুন</span> <!-- Add Chickpeas in Bangla -->
+                </div>
+                <div class="ingredient">
+                    <img src="chatpati_masala.png" alt="Chatpati Masala" onclick="addIngredient('masala')">
+                    <span>মসলা যোগ করুন</span> <!-- Add Masala in Bangla -->
+                </div>
+                <div class="ingredient">
+                    <img src="water.png" alt="Water" onclick="addIngredient('water')">
+                    <span>পানি যোগ করুন</span> <!-- Add Water in Bangla -->
+                </div>
+            </div>
+
+            
+            <div id="timer">সময় অবশিষ্ট: <span id="time">5</span> সেকেন্ড</div> <!-- Time Left in Bangla -->
+            <button id="start-game" onclick="startGame()">রান্না শুরু করুন</button> <!-- Start Cooking in Bangla -->
+        </div>
+
+        
+        <div id="added-ingredients">
+            <h2>যোগ করা উপকরণ</h2> <!-- Added Ingredients in Bangla -->
+            <ul id="ingredient-list"></ul>
+        </div>
     </div>
+
+
     <script src="script.js"></script>
 </body>
 </html>

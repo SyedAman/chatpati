@@ -1,4 +1,12 @@
+#game-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Space between game layout and ingredients */
+}
+
 #game-container {
+    flex: 1;
     text-align: center;
     max-width: 600px; /* Limit the width on larger screens */
     margin: auto; /* Center the container */
@@ -37,4 +45,61 @@
     #timer, #start-game {
         font-size: 16px; /* Adjust font size for smaller screens */
     }
+}
+
+#ingredients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredient {
+    margin: 0 10px; /* Spacing between ingredients */
+    text-align: center;
+}
+
+
+.ingredient span {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Make the ingredient images bigger */
+.ingredient img {
+    width: 100px; /* Adjust this value to your preference */
+    /* height can be set as well if needed for maintaining aspect ratio */
+}
+
+/* Style the finished-chatpati section as a grid */
+#finished-chatpati {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Creates a grid layout */
+    gap: 10px; /* Space between items */
+    /* Other styles as needed */
+}
+
+
+
+#added-ingredients {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+    min-width: 200px; /* Adjust as per your layout */
+}
+
+#added-ingredients h2 {
+    margin: 0 0 10px 0;
+}
+
+#added-ingredients ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#finished-chatpati {
+    flex: 1;
+    /* Add styles for finished chatpati representation */
+    margin: 20px;
+    min-width: 200px; /* Adjust as per your layout */
 }
