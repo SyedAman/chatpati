@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatpati Cooking Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <img id="pot" src="pot.png" alt="Cooking Pot">
+        <div id="ingredients">
+            <button onclick="addIngredient('chickpeas')">Add Chickpeas</button>
+            <button onclick="addIngredient('masala')">Add Masala</button>
+            <!-- Add more buttons for each ingredient -->
+        </div>
+        <div id="timer">Time Left: <span id="time">60</span> seconds</div>
+        <button id="start-game" onclick="startGame()">Start Cooking!</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
