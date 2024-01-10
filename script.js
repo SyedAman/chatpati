@@ -29,20 +29,20 @@ function addIngredient(ingredient) {
 function updatePotImage() {
     let potImage = 'pot_empty.png'; // Default empty pot
 
-    if (ingredientsAdded.includes('chickpeas') && ingredientsAdded.includes('masala')) {
+    if (ingredientsAdded.includes('ছোলা') && ingredientsAdded.includes('মসলা')) {
         potImage = 'pot_chickpeas_masala.png'; // Example image name
-    } else if (ingredientsAdded.includes('chickpeas')) {
+    } else if (ingredientsAdded.includes('ছোলা')) {
         potImage = 'pot_chickpeas.png';
-    } else if (ingredientsAdded.includes('masala')) {
+    } else if (ingredientsAdded.includes('মসলা')) {
         potImage = 'pot_masala.png';
-    } else if (ingredientsAdded.includes('water')) {
+    } else if (ingredientsAdded.includes('পানি')) {
         potImage = 'pot_water.png';
     }
     // Add more conditions for other ingredients
 
     document.getElementById('pot').src = potImage;
 
-    if (ingredientsAdded.includes('chickpeas') && ingredientsAdded.includes('masala') && ingredientsAdded.includes('water')) {
+    if (ingredientsAdded.includes('ছোলা') && ingredientsAdded.includes('মসলা') && ingredientsAdded.includes('পানি')) {
         addFinishedDish();
         ingredientsAdded = []; // Reset ingredients for next round
     }
