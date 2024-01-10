@@ -1,6 +1,7 @@
 let timer;
 let timeLeft = 5;
 let ingredientsAdded = [];
+let moneyEarned = 0;
 
 function startGame() {
     timer = setInterval(updateTimer, 1000);
@@ -54,6 +55,13 @@ function addFinishedDish() {
     dishImg.alt = 'Finished Chatpati';
     dishImg.style.width = '50px'; // Set the image size as needed
     finishedSection.appendChild(dishImg);
+
+    updateMoneyCounter(80); // Add 80 taka for each finished dish
+}
+
+function updateMoneyCounter(amount) {
+    moneyEarned += amount;
+    document.getElementById('money').innerText = moneyEarned;
 }
 
 function updateMoneyCounter(amount) {
