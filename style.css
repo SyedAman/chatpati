@@ -1,19 +1,40 @@
 #game-container {
     text-align: center;
+    max-width: 600px; /* Limit the width on larger screens */
+    margin: auto; /* Center the container */
 }
 
 #pot {
-    width: 200px;
-    margin: 20px;
+    max-width: 100%; /* Make pot responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0;
 }
 
 #ingredients img {
-    width: 100px;
-    margin: 5px;
-    cursor: pointer; /* Makes it clear that the images are clickable */
+    width: 30%; /* Adjust size for mobile */
+    margin: 10px 5px;
+    cursor: pointer;
 }
 
 #timer {
     font-size: 20px;
-    margin: 10px;
+    margin: 10px 0;
+}
+
+#start-game {
+    font-size: 20px; /* Larger button text */
+    padding: 10px 20px; /* Bigger button for easier click on mobile */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    #ingredients img {
+        width: 80%; /* Larger ingredient images on smaller screens */
+        margin: 10px auto; /* Center images */
+        display: block; /* Stack images vertically */
+    }
+
+    #timer, #start-game {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
 }
