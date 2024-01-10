@@ -1,0 +1,17 @@
+#game-container {
+    text-align: center;
+}
+
+#pot {
+    width: 200px;
+    margin: 20px;
+}
+
+#ingredients button {
+    margin: 5px;
+}
+
+#timer {
+    font-size: 20px;
+    margin: 10px;
+}
