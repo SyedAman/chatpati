@@ -7,8 +7,10 @@
     margin: 20px;
 }
 
-#ingredients button {
+#ingredients img {
+    width: 100px;
     margin: 5px;
+    cursor: pointer; /* Makes it clear that the images are clickable */
 }
 
 #timer {
